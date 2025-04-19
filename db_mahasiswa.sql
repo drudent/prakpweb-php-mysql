@@ -42,8 +42,8 @@ LOCK TABLES `mahasiswa` WRITE;
 /*!40000 ALTER TABLE `mahasiswa` DISABLE KEYS */;
 set autocommit=0;
 INSERT INTO `mahasiswa` VALUES
-(21,'Toni','231001','Informatika','toni@student.unsil.ac.id'),
-(23,'Budi','232001','Sistem Informasi','budi@student.unsil.ac.id');
+(21,'Toni','231001','Informatika','toni@contoh.unsil.ac.id'),
+(23,'Budi','232001','Sistem Informasi','budi@contoh.unsil.ac.id');
 /*!40000 ALTER TABLE `mahasiswa` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -57,4 +57,4 @@ commit;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
--- Dump completed on 2025-04-19  7:04:25
+-- Dump completed on 2025-04-19  7:21:30

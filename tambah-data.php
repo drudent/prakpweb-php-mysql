@@ -59,7 +59,7 @@ include 'koneksi.php';
                                 <label for="email" class="form-label">Email</label>
                                 <input type="email" class="form-control bg-dark border-dark text-light" id="email" name="email" required>
                             </div>
-                            <button type="submit" class="btn btn-primary" name="submit">Simpan</button>
+                            <button type="submit" class="btn btn-success" name="submit">Simpan</button>
                         </form>
                     </div>
                 </div>

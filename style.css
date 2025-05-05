@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css?family=Jaldi');
+@import url('https://fonts.googleapis.com/css?family=Alfa Slab One');
+
+html {
+    scroll-behavior: smooth;
+}
+
+.center {
+    text-align: center;
+}
+
+.bdr {
+    border: 1px solid white;
+}
+
+* {
+    left: 0;
+}
+
+body {
+    max-width: max-content;
+    max-height: max-content;
+    background-color: #121212;
+    font-family: Jaldi;
+}
+
+p {
+    color: #FFFFFF;
+    opacity: 87%;
+    font-size: 16px;
+    font-family: Jaldi;
+}
+
+h3 { 
+    color: #FFFFFF;
+    opacity: 87%;
+    font-size: 20px;
+}
+
+.container {
+    border: 1px solid white;
+    width: auto;
+}
+
+.header {
+    position: fixed;
+    z-index: 1;
+    background-color: #121212;
+    width: 100%;
+    top: 0;
+    height: 68px;
+    border-bottom: 1px solid #3D444D;
+}
+
+.header-logo {
+    float: left;
+    padding-left: 260px;
+    padding-top: 6px;
+}
+
+.header-logo img {
+    width: 50px;
+    padding: 10px 0;
+}
+
+.logo-text {
+    font-family: Jaldi;
+    font-size: 28px;
+    text-decoration: none;
+    color: #FFFFFF;
+    opacity: 87%;
+    
+}
+
+.header-menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 87%;
+}
+
+.header-menu {
+    float: right;
+    margin-right: 260px;
+}
+
+.header-menu li {
+    float: left;
+    list-style: none;
+    padding: 0px 24px;
+}
+
+.burger-btn {
+    visibility: hidden;
+} 
+
+.mobile-nav {
+    visibility: hidden;
+}
+
+.btn {
+    color: #1B2128;
+} 
+
+.box {
+    padding: 50px 260px 0 260px;
+    height: fit-content;
+}
+
+.beranda {
+    padding: 100px 260px 0 260px;
+    height: 270.3px;
+}
+
+.beranda-img {
+    width: fit-content;
+    float: left;
+}
+
+.beranda-img img {
+    width: 240px;
+    border-radius: 16px;
+}
+
+.beranda-info {
+    margin-left: 300px;
+    height: fit-content;
+    padding: 16px 0;
+}
+
+.beranda-info-btn {
+    display: block;
+    align-items: center;
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.beranda-info-btn a:hover {
+    background-color: #161a20;
+}
+
+.beranda-info a {
+    color: white;
+    opacity: 87%;
+    background-color: #222a32;
+    padding: 6px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.box-title {
+    text-align: center;
+}
+
+.box-title h3 {
+    border-bottom: 2px solid #1B2128;
+    opacity: 87%;
+}
+
+.box-title h4 {
+    color: #ffffff;
+    opacity: 87%;
+
+}
+
+.skill-list {
+    margin: 0 24px;
+}
+
+.skill img {
+    width: 50px;
+    margin-right: 16px;
+}
+
+.inline {
+    display: inline-flex;
+    margin-bottom: 24px;
+}
+
+.inline-test {
+    display: inline-flex;
+    margin-bottom: 24px;
+}
+
+.inline-port {
+    display: inline-flex;
+    margin-bottom: 24px;
+    padding-bottom: 36px ;
+}
+
+.box-testimoni {
+    width: fit-content;
+    margin: 0px 16px;
+    background-color: #1B2128;
+    border-radius: 8px;
+    padding: 0px 16px;
+}
+
+.name {
+    text-align: right;
+}
+
+#portfolio img {
+    width: 400px;
+    border-radius: 8px;
+    margin-right: 16px;
+}
+
+#portfolio a {
+    color: white;
+    opacity: 87%;
+    background-color: #222a32;
+    padding: 6px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#portfolio a:hover {
+    background-color: #161a20;
+}
+
+#portfolio h4 {
+    color: white;
+    opacity: 87%;
+    text-align: center;
+    margin: 0%;
+    padding-bottom: 8px;
+}
+
+.portfolio-text {
+    margin-left: 16px;
+    top: 0; 
+}
+
+.portfolio-text p {
+    margin: 0%;
+}
+
+.port-link {
+    margin: 0%;
+    padding-top: 28px;
+}
+
+#kontak img {
+    width: 28px;
+    height: px;
+    margin: 16px;
+}
+
+.kontak {
+    background-color: #1B2128;
+    border-radius: 8px;
+}
+
+.kontak-list {
+    margin: 0px 72px;
+}
+
+.kontak-list a {
+    text-decoration: none;
+}
+
+.box-kontak {
+    text-align: center;
+}
+
+form {
+    background-color: #1B2128;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #202020;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+    background-color: #121212;
+    color:#FFFFFF;
+    opacity: 87%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #f2f2f2;
+    opacity: 87%;
+    outline: none;
+}
+
+
+button {
+    background-color: #222a32;
+    color: white;
+    opacity: 87%;
+    padding: 10px 15px;
+    border: 1px solid #121212;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+
+button:hover {
+    background-color: #161a20;
+}
+
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+
+}
+
+@media (max-width: 1242px) {
+    .header-logo {
+        float: left;
+        padding-left: 20px;
+        padding-top: 6px;
+    }    
+
+    .header-menu {
+        float: right;
+        margin-right: 20px;
+    }
+
+    .box {
+        padding: 50px 20px 0 20px;
+        height: fit-content;
+    }
+    
+    .beranda {
+        padding: 100px 20px 0 20px;
+        height: 270.3px;
+    }
+}
+
+@media (max-width: 764px) {
+    .header-menu {
+        display: none;
+    }
+
+    .burger-btn {
+        visibility: visible;
+        color: #FFFFFF;
+        opacity: 87%;
+        float: right;
+        margin-right: 20px;
+        padding-top: 3px;
+    }
+
+    .closebtn {
+        font-weight: bold;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+        height: fit-content;
+      }
+
+    .mobile-nav {
+        visibility: visible;
+        text-align: right;
+        margin-right: 20px;
+    }
+
+    .mobile-nav a {
+        color: #FFFFFF;
+        opacity: 87%;
+        text-decoration: none;
+        font-size: 20px;
+        opacity: 87%;
+        margin: 0;
+    }
+
+    .mobile-nav li {
+        padding-bottom: 16px;
+    }
+
+    .beranda-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .beranda {
+        height: 450px;
+    }
+
+    .beranda-info {
+        margin: 0;
+        height: fit-content;
+        padding: 16px 0;
+    }
+
+    .inline-test {
+        display: block;
+    }
+
+    .box-testimoni {
+        width: fit-content;
+        margin: 0px 16px 24px;
+        background-color: #1B2128;
+        border-radius: 8px;
+        padding: 0px 16px;
+    }
+
+    #portfolio img {
+        width: 100%;
+        border-radius: 8px;
+        margin-right: 16px;
+    }
+
+    .inline-port {
+        display: block;
+        margin-bottom: 24px;
+        padding-bottom: 36px ;
+    }
+
+    #portfolio h4 {
+        font-size: large;
+        color: white;
+        opacity: 87%;
+        text-align: center;
+        padding: 16px 0 8px;
+    }
+
+    .port-link {
+        margin: 0%;
+        padding: 28px 0 36px;
+    }
+
+    .box-kontak {
+        text-align: center;
+    }
+
+    .kontak-list {
+        margin: 0px 36px;
+    }
+}
+
+@media (max-width: 534px) {
+    .box-kontak {
+        text-align: center;
+    }
+
+    .kontak-list {
+        margin: 0px 36px;
+        width: 200px;
+    }
+}

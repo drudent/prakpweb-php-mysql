@@ -1,8 +1,8 @@
 <?php
-$conn = mysqli_connect("localhost", "drudent", "P@55W0RD", "db_mahasiswa");
+    $conn = mysqli_connect("localhost", "r0y3nc", "p@sSr0y3ncW0rd", "praktikum_pweb");
 
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+    // Cek koneksi
+    if (!$conn) {
+        die("koneksi gagal: ".mysqli_connect_error());
+    }
 ?>

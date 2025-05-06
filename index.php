@@ -190,31 +190,26 @@
                     <textarea id="message" name="pesan" required></textarea>
                     <span class="error" id="messageError"></span>
                 
-                    <button type="submit">Kirim</button>
+                    <button type="submit" name="submit">Kirim</button>
                 </form>
 
                 <?php
-                    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                    if (isset($_POST['submit'])) {
                         // Ambil dan filter data dari form
-                        $nama = trim($_POST['nama_lengkap']);
-                        $email = trim($_POST['email']);
-                        $nomor_hp = trim($_POST['nomor_hp']);
-                        $pesan = trim($_POST['pesan']);
+                        $nama = $_POST['nama_lengkap'];
+                        $email = $_POST['email'];
+                        $nomor_hp = $_POST['nomor_hp'];
+                        $pesan = $_POST['pesan'];
 
-                        // Validasi sederhana (tambahan keamanan)
+                        // Validasi
                         if ($nama && $email && $nomor_hp && $pesan) {
-                            $sql = "INSERT INTO formulir (nama_lengkap, email, nomor_hp, pesan) VALUES (?, ?, ?, ?)";
-                            $stmt = $conn->prepare($sql);
-                            $stmt->bind_param("ssss", $nama, $email, $nomor_hp, $pesan);
+                            $tambah = mysqli_query($conn, "INSERT INTO formulir (nama_lengkap, email, nomor_hp, pesan) VALUES ('".$nama."', '".$email."', '".$nomor_hp."', '".$pesan."')");
 
-                            if ($stmt->execute()) {
+                            if ($tambah) {
                                 echo "<script>alert('Pesan berhasil dikirim!');</script>";
                             } else {
-                                echo "<script>alert('Gagal menyimpan pesan: " . $stmt->error . "');</script>";
+                                echo "<script>alert('Gagal menyimpan pesan: ".mysqli_error($conn)."');</script>";
                             }
-
-                            $stmt->close();
-                            $conn->close();
                         } else {
                             echo "<script>alert('Semua field wajib diisi.');</script>";
                         }
